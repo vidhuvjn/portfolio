@@ -144,6 +144,93 @@
 
       display: block;
     }
+
+    /* Last Part */
+    #flexcol2 {
+      display: flex;
+    }
+
+    #lcol1 {
+
+      width: 50%;
+    }
+
+    #lcon {
+      padding-top: 50px;
+      padding-left: 200px;
+    }
+
+    #phead {
+      font-size: 23px;
+      margin-bottom: 10px;
+    }
+
+    #phead2 {
+      font-size: 23px;
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+
+    #bottom-left {
+      width: 400px;
+      height: auto;
+
+    }
+
+    #bimg {
+
+      height: 200;
+      display: block;
+
+    }
+
+    /*
+    #bimg img {
+      vertical-align: top;
+    }
+  */
+    #lcol2 {
+      width: 50%;
+      padding-top: 70px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      border: 2px solid #ddd;
+      border-radius: 20px;
+      /* Adjust the value to control the roundness */
+      padding: 10px;
+      margin-bottom: 20px;
+      width: 70%;
+      /* Adjust the width as needed */
+      background-color: #ddd;
+      /* Grey background color */
+      outline: none;
+      /* Remove the default focus outline */
+    }
+
+    textarea {
+      height: 150px;
+      /* Adjust as needed for the message field */
+    }
+
+    input[type="submit"] {
+      border: 2px solid #333;
+      border-radius: 50px;
+      padding: 10px 20px;
+      background-color: #ccc;
+      cursor: pointer;
+      outline: none;
+      width: 100px;
+      margin-left: 60%;
+    }
   </style>
 </head>
 
@@ -218,6 +305,37 @@
       </div>
     </div>
   </div>
+  <!-- Last part -->
+  <div id="flexcol2">
+    <div id='lcol1'>
+      <div id="lcon">
+        <p id="phead">I can Help You</p>
+        <p>Whatever illustrtion works you need.<br> i can help you. Let's work together to give<br> the best possible
+          shape
+          to the idea that<br> generated in your mind. Art work is more<br> powerful than words. Be it for a filim,
+          stories,<br> events whatever, you deserve a great<br> peace of work as a support.</p>
+        <p id="phead2">Personal Contact</p>
+        <p>Kaloor, Ernakulam, India<br> Ph: 9567708662<br> vidhu@gmail.com</p>
+      </div>
+
+      <div id="bottom-left">
+        <!-- Your image on the left side -->
+        <img id="bimg" src="E:\pgms\html css\landinmg page pattern-02-02.svg" alt="Left Image">
+      </div>
+    </div>
+
+    <div id="lcol2">
+      <form>
+        <!-- Input with circular border and grey background -->
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Address">
+        <textarea placeholder="Your Message"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+
 </body>
 
 </html>

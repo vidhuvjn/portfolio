@@ -17,7 +17,7 @@
       margin-top: 10px;
       padding: 10px 0;
       display: flex;
-      position: fixed;
+      position: absolute;
       width: 100%;
       justify-content: space-between;
       align-items: center;
@@ -65,14 +65,15 @@
     }
 
     #left-side {
-      flex: 2;
+      
       width: 70%;
       height: 550px;
     }
 
     #left-side img {
-      width: 100%;
+      width: auto;
       height: 100%;
+      object-fit: fill;
       /* Make the image fill its container */
 
     }
@@ -242,7 +243,7 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Portfolio</a></li>
-        <li><a href="#">About Me</a></li>
+        <li><a href="aboutme.html">About Me</a></li>
         <li><a href="#">Learn</a></li>
         <li><a href="#">Community Project</a></li>
         <li><a href="#">Store</a></li>
@@ -252,7 +253,7 @@
     </nav>
     <div id="logo">
       <!-- Your logo goes here -->
-      <img src="E:\pgms\html css\LOGO.svg" alt="Your Logo">
+      <img src="LOGO.svg" alt="Your Logo">
     </div>
   </header>
 
@@ -260,7 +261,7 @@
   <div id="content">
     <div id="left-side">
       <!-- Your image on the left side -->
-      <img src="E:\pgms\html css\bannerBg-01.png" alt="Left Image">
+      <img src="bannerBg-01.png" alt="Left Image">
     </div>
     <div id="right-side">
       <!-- Your text content on the right side -->
@@ -320,7 +321,7 @@
 
       <div id="bottom-left">
         <!-- Your image on the left side -->
-        <img id="bimg" src="E:\pgms\html css\landinmg page pattern-02-02.svg" alt="Left Image">
+        <img id="bimg" src="landinmg page pattern-02-02.svg" alt="Left Image">
       </div>
     </div>
 

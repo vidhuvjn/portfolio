@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+
+            margin-top: 30px;
+            padding: 10px 0;
+            display: flex;
+
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #logo {
+
+            margin-right: 50px;
+            height: 60px;
+            width: 100px;
+            /* Adjust as needed */
+        }
+
+        nav {
+
+            margin-left: 30px;
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+            /* Adjust as needed */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ccc;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #content {
+            display: flex;
+            padding-top: 70px;
+        }
+
+        #ko {
+            width: 45%;
+            padding-left: 150px;
+        }
+
+        #koc {
+            height: 300px;
+            width: 500px;
+        }
+
+        #note {
+            width: 50%;
+        }
+
+        input[type="submit"] {
+            border: 2px solid #ec7805;
+            border-radius: 50px;
+            padding: 5px 10px;
+            background-color: #ec7805;
+            cursor: pointer;
+            outline: none;
+            width: 100px;
+
+        }
+
+        #footer {
+            display: flex;
+        }
+
+        #ftext {
+            font-size: 20px;
+            font-weight: 700;
+            color: #0370c9;
+            padding-right: 10px;
+        }
+
+        #flo {
+            margin-left: 100px;
+            margin-top: 50px;
+            width: 50%;
+        }
+
+        #icons {
+            display: flex;
+        }
+
+        #bimg {
+            margin: 20px 10px 20px 10px;
+            height: 20px;
+            width: 20px;
+        }
+
+        #right {
+            width: 50%;
+            position: relative;
+        }
+
+
+
+        #bimg1 {
+            position: absolute;
+            right: 0;
+            height: 120px;
+            display: block;
+
+
+        }
+
+
+        #bimg1 img {
+            vertical-align: top;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="#">Learn</a></li>
+                <li><a href="#">Community Project</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <!-- Your logo goes here -->
+            <img src="LOGO.svg" alt="Your Logo">
+        </div>
+    </header>
+
+    <!-- Rest of your webpage content goes here -->
+    <div id="content">
+        <div id="ko">
+            <img id="koc" src="kochi.png" alt="Clean Kochi">
+        </div>
+        <div id='note'>
+            <h1> 'Clean Kochi'</h1>
+            <h3>Street mural wall art</h3>
+            <p>September 16, 2023, Kadavantara, Ernakulam</p>
+            <p>Street mural Art, had painted in the Project 'Clean Kochi' which<br> led by kochi Municipal Corparation.
+                This project, which was carried<br> out on an experimental basis in a disused building, caught<br>
+                attention within days. Along with this, the muncipality has<br> given permission to convert such places
+                to this method.</p>
+            <br>
+            <input type="submit" value="Show More">
+        </div>
+    </div>
+    <div id="footer">
+        <div id="flo">
+            <div id="icons">
+                <p id="ftext">Follow Me</p>
+                <img id="bimg" src="insta.svg" alt="ic">
+                <img id="bimg" src="insta.svg" alt="Right Image">
+                <img id="bimg" src="insta.svg" alt="Right Image">
+            </div>
+        </div>
+        <div id="right">
+            <div id="bright">
+                <!-- Your image on the left side -->
+                <img id="bimg1" src="rightbanner.svg" alt="Right Image">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

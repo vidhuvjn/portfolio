@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Webpage Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+
+            margin-top: 30px;
+            padding: 10px 0;
+            display: flex;
+
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .active-link {
+            color: blue;
+        }
+
+        #logo {
+
+            margin-right: 50px;
+            height: 60px;
+            width: 100px;
+            /* Adjust as needed */
+        }
+
+        nav {
+
+            margin-left: 30px;
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+            /* Adjust as needed */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ccc;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        #htxt {
+            padding-left: 150px;
+            font-size: 40px;
+            font-weight: 900;
+            margin-bottom: 0px;
+        }
+
+        #htxt2 {
+            font-size: 40px;
+
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        #htxt3 {
+            font-size: 40px;
+
+            margin-top: 0px;
+
+        }
+
+        #htxt4 {
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        #htxt5 {
+            margin-top: 0px;
+            color: #ccc;
+        }
+
+        #content {
+            display: flex;
+        }
+
+        #left {
+            width: 45%;
+            margin-left: 150px;
+        }
+
+        #right {
+            width: 55%;
+            margin-top: 70px;
+        }
+
+        #irow {
+            display: flex;
+        }
+
+        #irow2 {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        #rimg {
+
+            height: 250px;
+            width: 200px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+        }
+
+        #icol {
+            display: block;
+        }
+
+        #bimg {
+            width: 250px;
+            height: 180px;
+        }
+
+        #cimg {
+            display: flex;
+            flex-direction: column;
+            height: 90px;
+            width: 150px;
+
+            padding-left: 10px;
+            padding-bottom: 5px;
+        }
+
+        input[type="submit"] {
+            border: 2px solid #ec7805;
+            border-radius: 50px;
+            padding: 5px 10px;
+            background-color: #ec7805;
+            cursor: pointer;
+            outline: none;
+            width: 100px;
+
+        }
+
+        #fl {
+            display: flex;
+            margin-top: 80px;
+        }
+
+        #bimg1 {
+
+            height: 120px;
+            display: block;
+
+        }
+
+
+        #bimg1 img {
+            vertical-align: top;
+        }
+
+        #leftbot {
+            width: 50%;
+        }
+
+        #flo {
+            margin-left: 100px;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a class="active-link" href="#">Learn</a></li>
+                <li><a href="comproj.html">Community Project</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Media</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <!-- Your logo goes here -->
+            <img src="LOGO.svg" alt="Your Logo">
+        </div>
+    </header>
+
+    <!-- Rest of your webpage content goes here -->
+    <p id="htxt">Discover Your Creative Odyssey</p>
+
+    <div id="content">
+        <div id="left">
+            <p id="htxt2">Online Illustraion</p>
+            <p id="htxt3">Courses</p>
+            <p id="htxt4">Comic Art Chronicles</p>
+            <p id="htxt5">Unearth th secrets of comic artstry. From dynamic<br> panel layouts to character design and
+                pacing
+                this<br> course devies into the intriacies of creating compelling<br> comics. Discover how to tell
+                stories through the visual<br> language of sequencing art.</p>
+            <br>
+            <input type="submit" value="Join Now">
+            <br><br><br><br>
+            <p id="htxt4">Storyboarding Birillance </p>
+            <p id="htxt5">Learn the art of visual story telling through storyboaring.<br>Explore techinques to bring
+                narratives to
+                life, frame by<br> frame, and understanding the crucial role storyboards play<br> in filim, animation
+                and sequenctial art.</p>
+            <br>
+            <input type="submit" value="Join Now">
+        </div>
+        <div id="right">
+            <div id="irow">
+                <img id="rimg" src="tea.png" alt="ic">
+                <img id="rimg" src="tea.png" alt="ic">
+            </div>
+            <div id="irow2">
+                <img id="bimg" src="pray.png" alt="ic">
+                <div id="icol">
+                    <img id="cimg" src="spirit.png" alt="ic">
+                    <img id="cimg" src="car.png" alt="ic">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fl">
+        <div id="leftbot">
+            <div id="bottom-left1">
+                <!-- Your image on the left side -->
+                <img id="bimg1" src="learn patterns-01.png" alt="Left Image">
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

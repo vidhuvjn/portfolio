@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VW :: Projects</title>
 
-    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="global.css" />
 
     <style>
         #content {
@@ -36,28 +36,19 @@
             cursor: pointer;
             outline: none;
             width: 100px;
-
         }
 
         #footer {
             display: flex;
         }
 
-        #ftext {
-            font-size: 20px;
-            font-weight: 700;
-            color: #0370c9;
-            padding-right: 10px;
-        }
+
 
         #flo {
-            margin-left: 100px;
-            margin-top: 50px;
-            width: 50%;
-        }
-
-        #icons {
+            align-items: center;
             display: flex;
+            margin-left: 100px;
+            width: 50%;
         }
 
         #bimg {
@@ -71,17 +62,12 @@
             position: relative;
         }
 
-
-
         #bimg1 {
             position: absolute;
             right: 0;
             height: 120px;
             display: block;
-
-
         }
-
 
         #bimg1 img {
             vertical-align: top;
@@ -90,9 +76,7 @@
 </head>
 
 <body>
-
     <header>
-
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -105,41 +89,60 @@
         </nav>
         <div id="logo">
             <!-- Your logo goes here -->
-            <img src="icon/logo.svg" alt="Your Logo">
+            <img src="icon/logo.svg" alt="Your Logo" />
         </div>
     </header>
 
     <!-- Rest of your webpage content goes here -->
     <div id="content">
         <div id="ko">
-            <img id="koc" src="images/kochi.png" alt="Clean Kochi">
+            <img id="koc" src="images/kochi.png" alt="Clean Kochi" />
         </div>
-        <div id='note'>
-            <h1> 'Clean Kochi'</h1>
+        <div id="note">
+            <h1>'Clean Kochi'</h1>
             <h3>Street mural wall art</h3>
             <p>September 16, 2023, Kadavantara, Ernakulam</p>
-            <p>Street mural Art, had painted in the Project 'Clean Kochi' which<br> led by kochi Municipal Corparation.
-                This project, which was carried<br> out on an experimental basis in a disused building, caught<br>
-                attention within days. Along with this, the muncipality has<br> given permission to convert such places
-                to this method.</p>
-            <br>
-            <input type="submit" value="Show More">
+            <p>
+                Street mural Art, had painted in the Project 'Clean Kochi' which<br />
+                led by kochi Municipal Corparation. This project, which was carried<br />
+                out on an experimental basis in a disused building, caught<br />
+                attention within days. Along with this, the muncipality has<br />
+                given permission to convert such places to this method.
+            </p>
+            <br />
+            <input type="submit" value="Show More" />
         </div>
     </div>
     <div id="footer">
         <div id="flo">
-            <div id="icons">
-                <p id="ftext">Follow Me</p>
-                <img id="bimg" src="icon/instagram.svg" alt="instagram">
-                <img id="bimg" src="icon/behance.svg" alt="behance">
-                <img id="bimg" src="icon/linkedin.svg" alt="linkedin">
-                <img id="bimg" src="icon/x.svg" alt="x">
+            <div class="social-icons">
+                <p class="trailing_text">Follow Me</p>
+                <div class="icon-button">
+                    <a href="https://instagram.com/vidhu_vjn" target="_blank">
+                        <img src="icon/instagram.svg" alt="instagram" />
+                    </a>
+                </div>
+                <div class="icon-button">
+                    <a href="https://behance.com/vidhu_vjn" target="_blank">
+                        <img src="icon/behance.svg" alt="behance" />
+                    </a>
+                </div>
+                <div class="icon-button">
+                    <a href="https://linkedin.com/in/vidhuvjn" target="_blank">
+                        <img src="icon/linkedin.svg" alt="linkedin" />
+                    </a>
+                </div>
+                <!-- <div class="icon-button">
+                    <a href="https://x.com/vidhu_vjn" target="_blank">
+                        <img src="icon/x.svg" alt="x" />
+                    </a>
+                </div> -->
             </div>
         </div>
         <div id="right">
             <div id="bright">
                 <!-- Your image on the left side -->
-                <img id="bimg1" src="images/graphics/rightbanner.svg" alt="Right Image">
+                <img id="bimg1" src="images/graphics/rightbanner.svg" alt="Right Image" />
             </div>
         </div>
     </div>

@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap");
+
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
+
 header {
   padding: 5px 0;
   display: flex;
@@ -48,4 +50,41 @@ nav a {
   color: #555555;
   font-weight: bold;
   font-size: 16px;
+}
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.social-icons a {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-icons a img {
+  width: 20px;
+  height: 20px;
+}
+
+.trailing_text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #657ebf;
+  margin-right: 10px;
+}
+
+.icon-button {
+  margin-right: 10px;
+  border-radius: 10px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background-color: wheat;
 }

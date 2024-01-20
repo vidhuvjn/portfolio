@@ -7,22 +7,33 @@
     <title>VW :: About</title>
     <link rel="stylesheet" href="global.css">
     <style>
-       
         #content {
-
-            width: 50%;
+            display: flex;
             padding-left: 110px;
+            padding-right: 110px;
+            background: url('images/graphics/about_pattern.svg') no-repeat;
+        }
+
+        .column img {
+            width: 400px;
         }
 
         #h {
             margin-top: 7%;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            font-size: 40;
         }
 
         #atxt {
             text-align: justify;
             margin-bottom: 20%;
+            line-height: 1.5;
             padding-right: 50px;
-            color: #ccc;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+            font-size: 18;
+            color: #636363;
         }
 
         #bottom-left1 {
@@ -77,26 +88,40 @@
 
     <!-- Rest of your webpage content goes here -->
     <div id="content">
-        <h1 id="h">Who is Vidhu?</h1>
-        <p id="atxt">
-            I am Vidhu Mon TV, a passionate artist and illustrator dedicated to crafting visual narratives that
-            captivate the imagination. My artistic journey began at the prestigious Raja Ravivarma College of Pine Arts,
-            Mavelikkara, where I graduated in 2021 with a specialization in Applied Arts. Following my insatiable desire
-            to delve deeper into the world of visual storytelling, I pursued post-graduation in Applied Arts at RLV
-            College of Music and Fine Arts, Tripunithura<br><br> While my academic foundation is rooted in applied arts,
-            my heart beats for the intricate realm of illustration. I find immense joy and purpose in breathing life
-            into ideas, characters, and worlds through my art.With a keen eye for detail and a love for storytelling, I
-            have honed my skills as an illustrator, comic artist,and concept artist.<br><br> My artistic philosophy is
-            anchored in the belief that every stroke of the brush or click of the digital pen holds the potential to
-            tell a unique story. Whether I am crafting whimsical illustrations, dynamic comic panels, or conceptualizing
-            immersive worlds, my focus is to transport viewers into realms where imagination knows no bounds.<br><br>
-            Beyond the strokes and pixels, I am committed to sharing my knowledge and passion with others. Teaching is
-            not just a profession but a calling, and I take pride in guiding fellow artists on their own creative
-            journeys. Join me as we explore the infinite possibilities of illustration and storytelling
-            together.<br><br> Thank you for being a part of my artistic odyssey. Let's enter on this creative adventure
-            where every line drawn is a step into a
-            world of boundless imagination.
-        </p>
+        <div class="column">
+            <h1 id="h">About Vidhu</h1>
+            <p id="atxt">
+                I am Vidhu Mon TV, a passionate artist and illustrator dedicated to crafting visual narratives that
+                captivate the imagination. My artistic journey began at the prestigious Raja Ravivarma College of Pine
+                Arts,
+                Mavelikkara, where I graduated in 2021 with a specialization in Applied Arts. Following my insatiable
+                desire
+                to delve deeper into the world of visual storytelling, I pursued post-graduation in Applied Arts at RLV
+                College of Music and Fine Arts, Tripunithura<br><br> While my academic foundation is rooted in applied
+                arts,
+                my heart beats for the intricate realm of illustration. I find immense joy and purpose in breathing life
+                into ideas, characters, and worlds through my art.With a keen eye for detail and a love for
+                storytelling, I
+                have honed my skills as an illustrator, comic artist,and concept artist.<br><br> My artistic philosophy
+                is
+                anchored in the belief that every stroke of the brush or click of the digital pen holds the potential to
+                tell a unique story. Whether I am crafting whimsical illustrations, dynamic comic panels, or
+                conceptualizing
+                immersive worlds, my focus is to transport viewers into realms where imagination knows no
+                bounds.<br><br>
+                Beyond the strokes and pixels, I am committed to sharing my knowledge and passion with others. Teaching
+                is
+                not just a profession but a calling, and I take pride in guiding fellow artists on their own creative
+                journeys. Join me as we explore the infinite possibilities of illustration and storytelling
+                together.<br><br> Thank you for being a part of my artistic odyssey. Let's enter on this creative
+                adventure
+                where every line drawn is a step into a
+                world of boundless imagination.
+            </p>
+        </div>
+        <div class="column">
+            <img src="images/vidhu.png" alt="">
+        </div>
     </div>
     <div id="fl">
         <div id="left">
@@ -107,8 +132,28 @@
         </div>
 
         <div id="flo">
-            <div id="icons">
-                <p>Follow Me</p>
+            <div class="social-icons">
+                <p class="trailing_text">Follow Me</p>
+                <div class="icon-button">
+                    <a href="https://instagram.com/vidhu_vjn" target="_blank">
+                        <img src="icon/instagram.svg" alt="instagram" />
+                    </a>
+                </div>
+                <div class="icon-button">
+                    <a href="https://behance.com/vidhu_vjn" target="_blank">
+                        <img src="icon/behance.svg" alt="behance" />
+                    </a>
+                </div>
+                <div class="icon-button">
+                    <a href="https://linkedin.com/in/vidhuvjn" target="_blank">
+                        <img src="icon/linkedin.svg" alt="linkedin" />
+                    </a>
+                </div>
+                <!-- <div class="icon-button">
+                    <a href="https://x.com/vidhu_vjn" target="_blank">
+                        <img src="icon/x.svg" alt="x" />
+                    </a>
+                </div> -->
             </div>
         </div>
     </div>

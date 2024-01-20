@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vidhu's Wonderland :: VW</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" />
 
   <style>
     body {
@@ -33,7 +33,6 @@
     }
 
     #logo {
-
       margin-right: 50px;
       height: 60px;
       width: 100px;
@@ -41,13 +40,11 @@
     }
 
     nav {
-
       margin-left: 30px;
       display: flex;
     }
 
     nav ul {
-
       list-style: none;
       margin: 0;
       padding: 0;
@@ -60,7 +57,7 @@
     }
 
     nav ul li a {
-      font-family: 'Montserrat', sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: 600;
       text-decoration: none;
       color: #fff;
@@ -83,16 +80,17 @@
       height: 100%;
       object-fit: fill;
       /* Make the image fill its container */
-
     }
 
     #right-side {
       flex: 1;
       padding: 20px;
-      margin-top: 200px;
+      margin-top: 100px;
+      width: 100%;
     }
 
     #htag {
+
       font-weight: bold;
       text-align: right;
       width: 70%;
@@ -109,7 +107,6 @@
     }
 
     #col1 {
-
       height: 95vh;
       width: 50%;
       padding-top: 50px;
@@ -124,15 +121,19 @@
     }
 
     #ht {
-
       color: white;
       text-align: start;
-      font-weight: 500;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 400;
+      font-size: 24;
     }
 
     #p3 {
       color: white;
       text-align: start;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 200;
+      font-size: 18;
       padding-bottom: 35px;
     }
 
@@ -160,7 +161,6 @@
     }
 
     #lcol1 {
-
       width: 50%;
     }
 
@@ -169,13 +169,17 @@
       padding-left: 200px;
     }
 
-    #phead {
-      font-size: 23px;
+    .phead {
+      font-size: 24px;
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
       margin-bottom: 10px;
     }
 
-    #phead2 {
-      font-size: 23px;
+    .phead2 {
+      font-size: 24px;
+      font-weight: 600;
+      font-family: "Montserrat", sans-serif;
       margin-top: 50px;
       margin-bottom: 10px;
     }
@@ -183,14 +187,11 @@
     #bottom-left {
       width: 400px;
       height: auto;
-
     }
 
     #bimg {
-
       height: 200;
       display: block;
-
     }
 
     /*
@@ -229,14 +230,27 @@
     }
 
     input[type="submit"] {
-      border: 2px solid #333;
+      border: 2px solid #fcb13d;
       border-radius: 50px;
-      padding: 10px 20px;
-      background-color: #ccc;
+      padding: 5px 10px;
+      background-color: #fcb13d;
       cursor: pointer;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
       outline: none;
       width: 100px;
-      margin-left: 60%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #f29203;
+    }
+
+    .text-description {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: justify;
     }
   </style>
 </head>
@@ -255,7 +269,7 @@
     </nav>
     <div id="logo">
       <!-- Your logo goes here -->
-      <img src="icon/logo.svg" alt="Your Logo">
+      <img src="icon/logo.svg" alt="Your Logo" />
     </div>
   </header>
 
@@ -263,82 +277,95 @@
   <div id="content">
     <div id="left-side">
       <!-- Your image on the left side -->
-      <img src="images/graphics/hero_banner.png" alt="hero banner">
+      <img src="images/graphics/hero_banner.png" alt="hero banner" />
     </div>
     <div id="right-side">
       <!-- Your text content on the right side -->
-      <h1 id='htag'>Unveling dreams<br> in pixels:</h1>
+      <h1 id="htag">
+        Unveling dreams<br />
+        in pixels:
+      </h1>
       <h1>Vidhu's Wonderland</h1>
       <p>Where imagination takes flight and illustration comes to life.</p>
     </div>
   </div>
   <div id="third">
     <div id="flexcol">
-      <div id='col1'>
-        <h1 id='ht'>Story Board Art</h1>
-        <p id="p3">Here the type of storyboards that can be<br>created to become a better backbone for<br>your creative
-          works.
-          Be it films, ads, story<br>or anything.</p>
-        <h1 id='ht'>Comic Book Art</h1>
-        <p id="p3">Here youn will find the best illustrations for<br> your comic stories that are very attractive<br>
+      <div id="col1">
+        <h1 id="ht">Story Board Art</h1>
+        <p id="p3">
+          Here the type of storyboards that can be<br />created to become a
+          better backbone for<br />your creative works. Be it films, ads,
+          story<br />or anything.
+        </p>
+        <h1 id="ht">Comic Book Art</h1>
+        <p id="p3">
+          Here youn will find the best illustrations for<br />
+          your comic stories that are very attractive<br />
           and funny.
         </p>
-        <h1 id='ht'>Concept Illustration</h1>
-        <p id="p3">Any kind of concept oriented illustrations,<br> character sketches to capture any idea<br> that
-          strikes into
-          your mind.</p>
-
-
+        <h1 id="ht">Concept Illustration</h1>
+        <p id="p3">
+          Any kind of concept oriented illustrations,<br />
+          character sketches to capture any idea<br />
+          that strikes into your mind.
+        </p>
       </div>
       <div id="col2">
         <div id="image-container">
           <!-- Image 1 -->
-          <img src="images/story_board_art_1.png" alt="Punyalan Story Board">
+          <img src="images/story_board_art_1.png" alt="Punyalan Story Board" />
           <!-- Image 2 -->
-          <img src="images/story_board_art_2.png" alt="Punyalan Story Board">
+          <img src="images/story_board_art_2.png" alt="Punyalan Story Board" />
           <!-- Image 3 -->
-          <img src="images/comic_book_1.png" alt="Drunk and Drive old man">
+          <img src="images/comic_book_1.png" alt="Drunk and Drive old man" />
           <!-- Image 4 -->
-          <img src="images/comic_book_2.png" alt="Tailor">
+          <img src="images/comic_book_2.png" alt="Tailor" />
           <!-- Image 5 -->
-          <img src="images/illustration_1.png" alt="Grandpa Reading News">
+          <img src="images/illustration_1.png" alt="Grandpa Reading News" />
           <!-- Image 6 -->
-          <img src="images/illustration_2.png" alt="Honey Rose Illustration">
+          <img src="images/illustration_2.png" alt="Honey Rose Illustration" />
         </div>
       </div>
     </div>
   </div>
   <!-- Last part -->
   <div id="flexcol2">
-    <div id='lcol1'>
+    <div id="lcol1">
       <div id="lcon">
-        <p id="phead">I can Help You</p>
-        <p>Whatever illustrtion works you need.<br> i can help you. Let's work together to give<br> the best possible
-          shape
-          to the idea that<br> generated in your mind. Art work is more<br> powerful than words. Be it for a filim,
-          stories,<br> events whatever, you deserve a great<br> peace of work as a support.</p>
-        <p id="phead2">Personal Contact</p>
-        <p>Kaloor, Ernakulam, India<br> Ph: 9567708662<br> vidhu@gmail.com</p>
+        <p class="phead">I can Help You</p>
+        <p class="text-description">
+          Whatever illustrtion works you need.<br />
+          i can help you. Let's work together to give<br />
+          the best possible shape to the idea that<br />
+          generated in your mind. Art work is more<br />
+          powerful than words. Be it for a filim, stories,<br />
+          events whatever, you deserve a great<br />
+          peace of work as a support.
+        </p>
+        <p class="phead2">Personal Contact</p>
+        <p class="text-description">
+          vidhu@gmail.com
+        </p>
       </div>
 
       <div id="bottom-left">
         <!-- Your image on the left side -->
-        <img id="bimg" src="images/graphics/landing_pattern_1.svg" alt="Landing pattern">
+        <img id="bimg" src="images/graphics/landing_pattern_1.svg" alt="Landing pattern" />
       </div>
     </div>
 
     <div id="lcol2">
       <form>
         <!-- Input with circular border and grey background -->
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <input type="text" placeholder="Address">
+        <input type="text" placeholder="Name" />
+        <input type="email" placeholder="Email" />
+        <input type="text" placeholder="Address" />
         <textarea placeholder="Your Message"></textarea>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" />
       </form>
     </div>
   </div>
-
 </body>
 
 </html>

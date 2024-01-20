@@ -88,3 +88,19 @@ nav a {
 .icon-button:hover {
   background-color: wheat;
 }
+
+.primary-button {
+  border: 2px solid #fcb13d;
+  border-radius: 50px;
+  padding: 5px 10px;
+  background-color: #fcb13d;
+  cursor: pointer;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  outline: none;
+  width: 100px;
+}
+.primary-button:hover {
+  background-color: #f29203;
+}

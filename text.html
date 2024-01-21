@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VW :: About</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .active-link {
+            color: #be5776;
+        }
+
+        header {
+            margin-top: 10px;
+            padding: 10px 0;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        #logo {
+            margin-right: 50px;
+            height: 60px;
+            width: 100px;
+            /* Adjust as needed */
+        }
+
+        nav {
+            margin-left: 30px;
+            display: flex;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-left: 20px;
+            /* Adjust as needed */
+        }
+
+        nav a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-decoration: none;
+            color: #555555;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        /* ************************************************ */
+        #htxt {
+            padding-left: 100px;
+            font-size: 40px;
+            font-weight: 900;
+            margin-bottom: 0px;
+        }
+
+        #htxt2 {
+            margin-top: 0px;
+            padding-left: 100px;
+            font-size: 30px;
+            color: #555555;
+        }
+
+        #slider {
+            position: relative;
+            width: 40%;
+            height: 27vw;
+            margin: 150px auto;
+            perspective: 1400px;
+            transform-style: preserve-3d;
+            border-radius: 12px;
+            /* Rounded corners */
+        }
+
+        /* Radio buttons for slide control */
+        input[type=radio] {
+            position: relative;
+            top: 108%;
+            left: 50%;
+            width: 20px;
+            /* Slightly larger */
+            height: 20px;
+            /* Slightly larger */
+            margin: 0 15px 0 0;
+            background: #ccc;
+            /* Light gray */
+            border: 2px solid #ccc;
+            /* Light gray */
+            border-radius: 50%;
+            /* Rounded corners */
+            cursor: pointer;
+            transform: translateX(-83px);
+            transition: background 300ms ease, border 300ms ease;
+            /* Smooth transition */
+        }
+
+        input[type=radio]:checked {
+            background: #FF5A5F;
+            /* Airbnb's coral red */
+            border: 2px solid #FF5A5F;
+            /* Airbnb's coral red */
+        }
+
+        /* Labels and images */
+        #slider label,
+        #slider label img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 40px;
+
+            vertical-align: top;
+            /* Rounded corners */
+            transition: transform 400ms ease, opacity 400ms ease;
+            /* Added opacity transition */
+        }
+
+        /* New addition for Zoom Effect */
+        .zoom-container {
+            overflow: hidden;
+            /* Hide the part of the image that extends outside the div */
+        }
+
+        /* Zoom effect */
+        .zoom-container:hover {
+            cursor: default;
+            /* Change cursor to zoom-in icon */
+        }
+
+        .zoom-container.can-zoom:hover img {
+            transform: scale(1.4);
+            /* Zoom level */
+            transition: transform .5s ease-in-out;
+        }
+
+
+        /* Existing transition rules */
+        #s1:checked~#slide1,
+        #s2:checked~#slide2,
+        #s3:checked~#slide3,
+        #s4:checked~#slide4,
+        #s5:checked~#slide5 {
+            box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+            transform: translate3d(0%, 0, 0px);
+        }
+
+        #s1:checked~#slide2,
+        #s2:checked~#slide3,
+        #s3:checked~#slide4,
+        #s4:checked~#slide5,
+        #s5:checked~#slide1 {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+            transform: translate3d(50%, 0, -240px);
+        }
+
+        #s1:checked~#slide3,
+        #s2:checked~#slide4,
+        #s3:checked~#slide5,
+        #s4:checked~#slide1,
+        #s5:checked~#slide2 {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+            transform: translate3d(95%, 0, -470px);
+        }
+
+        #s1:checked~#slide4,
+        #s2:checked~#slide5,
+        #s3:checked~#slide1,
+        #s4:checked~#slide2,
+        #s5:checked~#slide3 {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+            transform: translate3d(-95%, 0, -470px);
+        }
+
+        #s1:checked~#slide5,
+        #s2:checked~#slide1,
+        #s3:checked~#slide2,
+        #s4:checked~#slide3,
+        #s5:checked~#slide4 {
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+            transform: translate3d(-50%, 0, -240px);
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        let currentSlide = 1;
+        let isPaused = false; // Variable to check if the slideshow is paused
+
+        // Function to change the slide
+        const changeSlide = () => {
+            if (!isPaused) {
+                // Remove 'can-zoom' class from all slides
+                document.querySelectorAll('.zoom-container').forEach((container) => {
+                    container.classList.remove('can-zoom');
+                });
+
+                // Set the active slide
+                const activeSlide = document.getElementById(`s${currentSlide}`);
+                activeSlide.checked = true;
+
+                // Add 'can-zoom' class to the active slide
+                const activeContainer = document.querySelector(`.zoom-container[data-slide="${currentSlide}"]`);
+                if (activeContainer) {
+                    activeContainer.classList.add('can-zoom');
+                }
+
+                // Move to the next slide
+                currentSlide++;
+                if (currentSlide > 5) {
+                    currentSlide = 1;
+                }
+            }
+        };
+
+        // Start the auto-scroll
+        let slideInterval = setInterval(changeSlide, 5000);
+
+        // Function to pause the auto-scroll
+        const pauseSlide = () => {
+            isPaused = true;
+        };
+
+        // Function to resume the auto-scroll
+        const resumeSlide = () => {
+            isPaused = false;
+        };
+
+        // Adding event listeners to pause and resume auto-scroll on hover
+        document.querySelectorAll('.zoom-container').forEach((container) => {
+            container.addEventListener('mouseover', () => {
+                if (!container.classList.contains('can-zoom')) {
+                    return;
+                }
+                pauseSlide();
+            });
+            container.addEventListener('mouseout', () => {
+                resumeSlide();
+            });
+        });
+
+    </script>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active-link">Portfolio</a></li>
+                <li><a href="aboutme.html">About</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="comproj.html">Projects</a></li>
+                <li><a href="store.html">Store</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <!-- Your logo goes here -->
+            <img src="icon/logo.svg" alt="Your Logo">
+        </div>
+    </header>
+
+    <!-- Rest of your webpage content goes here -->
+    <p id="htxt">Enter on a journey of Creativity:</p>
+    <p id="htxt2">Step Inside My Captivating Art Gallery!</p>
+    <section id="slider">
+        <input type="radio" name="slider" id="s1" data-slide="1" checked>
+        <input type="radio" name="slider" id="s2" data-slide="2">
+        <input type="radio" name="slider" id="s3" data-slide="3">
+        <input type="radio" name="slider" id="s4" data-slide="4">
+        <input type="radio" name="slider" id="s5" data-slide="5">
+        <label for="s1" id="slide1">
+            <div class="zoom-container" data-slide="1">
+                <img src="img1.png" alt="Image 1">
+            </div>
+        </label>
+        <label for="s2" id="slide2">
+            <div class="zoom-container" data-slide="2">
+                <img src="img2.png" alt="Image 2">
+            </div>
+        </label>
+        <label for="s3" id="slide3">
+            <div class="zoom-container" data-slide="3">
+                <img src="img3.png" alt="Image 3">
+            </div>
+        </label>
+        <label for="s4" id="slide4">
+            <div class="zoom-container" data-slide="4">
+                <img src="img4.png" alt="Image 4">
+            </div>
+        </label>
+        <label for="s5" id="slide5">
+            <div class="zoom-container" data-slide="5">
+                <img src="img5.png" alt="Image 5">
+            </div>
+        </label>
+    </section>
+</body>
+
+</html>

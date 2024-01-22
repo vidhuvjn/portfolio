@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -51,6 +51,7 @@ nav a {
   font-weight: bold;
   font-size: 16px;
 }
+
 .social-icons {
   display: flex;
   align-items: center;
@@ -101,6 +102,7 @@ nav a {
   outline: none;
   width: 100px;
 }
+
 .primary-button:hover {
   background-color: #f29203;
 }

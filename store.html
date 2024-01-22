@@ -14,18 +14,39 @@
             box-sizing: border-box;
         }
 
+        .first {
+
+
+            background: url('images/graphics/about_pattern.svg') no-repeat;
+            padding: 50px 0;
+        }
+        
+
         .demo {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
             margin-top: 25px;
+            margin-left: 10%;
+            margin-right: 10%;
         }
 
         .demo img {
-            height: 300px;
-            width: 400px;
+            height: 200px;
+            width: 300px;
             border-radius: 10px;
-            margin-left: 25px;
+
+        }
+
+        .item-name {
+            padding: 5px 0;
+            font-size: 16px;
+            color: #9a9a9a;
+        }
+
+        .price {
+            padding: 5px 0;
+            font-size: 16px;
         }
 
         .demo1 {
@@ -67,30 +88,35 @@
     </header>
 
     <!-- Rest of your webpage content goes here -->
-    <div style="margin-left: 150px; margin-top: 5px;">
-        <h3>Laptop skins</h3>
-    </div>
-    <div class="demo">
-        <div class="demo1">
-            <img src="images/store/laptop_cover/into_the_space.png" alt="Into the Space" />
-            <h2>Into the space</h2>
-            <h2>Rs.499</h2>
-            <button class="primary-button">Buy now</button>
+    <div class="first">
+        <div style="margin-left: 10%; margin-top: 5px;">
+            <h3>Laptop skins</h3>
         </div>
+        <div class="demo">
+            <div class="demo1">
+                <img src="images/store/laptop_cover/into_the_space.png" alt="Into the Space" />
+                <p class="item-name">Into the space</p>
+                <p class="price">Rs.499</p>
+                <button class="primary-button">Buy now</button>
+            </div>
 
-        <div class="demo1">
-            <img src="images/store/laptop_cover/deep_like_ocean.png" alt="Deeplike Ocean" />
-            <h2>Deeper like ocean</h2>
-            <h2>Rs.499</h2>
-            <button class="primary-button">Buy now</button>
-        </div>
-        <div class="demo1">
-            <img src="images/store/laptop_cover/the_evening_bliss.png" alt="The evening bliss" />
-            <h2>The evening bliss</h2>
-            <h2>Rs.499</h2>
-            <button class="primary-button">Buy now</button>
+            <div class="demo1">
+                <img src="images/store/laptop_cover/deep_like_ocean.png" alt="Deeplike Ocean" />
+                <p class="item-name">Deeper like ocean</p>
+                <p class="price">Rs.499</p>
+                <button class="primary-button">Buy now</button>
+            </div>
+            <div class="demo1">
+                <img src="images/store/laptop_cover/the_evening_bliss.png" alt="The evening bliss" />
+                <p class="item-name">The evening bliss</p>
+                <p class="price">Rs.499</p>
+                <button class="primary-button">Buy now</button>
+            </div>
         </div>
     </div>
+
+
+   <div class="second">
     <div style="margin-left: 150px;">
         <h3>T shirts</h3>
     </div>
@@ -98,45 +124,46 @@
 
         <div class="demo1">
             <img src="images/store/tshirts/into_the_space.png" alt="Into the space" />
-            <h2>Into the space</h2>
-            <h2>Rs.649</h2>
+            <p class="item-name">Into the space</p>
+            <p class="price">Rs.649</p>
             <button class="primary-button">Buy now</button>
         </div>
 
         <div class="demo1">
             <img src="images/store/tshirts/the_mechanic.png" alt="The mechanic" />
-            <h2>The mechanic</h2>
-            <h2>Rs.649</h2>
+            <p class="item-name">The mechanic</p>
+            <p class="price">Rs.649</p>
             <button class="primary-button">Buy now</button>
         </div>
         <div class="demo1">
             <img src="images/store/tshirts/the_scooter_guy.png" alt="The scooter guy" />
-            <h2>The scooter guy</h2>
-            <h2>Rs.649</h2>
+            <p class="item-name">The scooter guy</p>
+            <p class="price">Rs.649</p>
             <button class="primary-button">Buy now</button>
         </div>
     </div>
+   </div>
     <div style="margin-left: 150px;">
         <h3>Mobile phone cases</h3>
     </div>
     <div class="demo">
         <div class="demo1">
             <img src="images/store/mobile_cover/iphone14_plus_book.png" alt="iphone 14 plus book back cover" />
-            <h2>customized backcover for iphone 14 plus</h2>
-            <h2>Rs.299</h2>
+            <p class="item-name">customized backcover for iphone 14 plus</p>
+            <p class="price">Rs.299</p>
             <button class="primary-button">Buy now</button>
         </div>
 
         <div class="demo1">
             <img src="images/store/mobile_cover/iphone_14_plus_crockadile.png" alt="iphone 14 plus crockadile" />
-            <h2>customized backcover for iphone 14 plus</h2>
-            <h2>Rs.299</h2>
+            <p class="item-name">customized backcover for iphone 14 plus</p>
+            <p class="price">Rs.299</p>
             <button class="primary-button">Buy now</button>
         </div>
         <div class="demo1">
             <img src="images/store/mobile_cover/iphone_14_plus_ocean.png" alt="iphone 14 plus ocean" />
-            <h2>customized backcover for iphone 14 plus</h2>
-            <h2>Rs.299</h2>
+            <p class="item-name">customized backcover for iphone 14 plus</p>
+            <p class="price">Rs.299</p>
             <button class="primary-button"> Buy now</button>
         </div>
     </div>
@@ -147,20 +174,20 @@
     <div class="demo">
         <div class="demo11">
             <img src="images/store/mouse_pad/mouse_pad_deep_like_ocean.png" alt="Deep Like Ocean Mouse pad" />
-            <h2>Deep Like Ocean/h2>
-                <h2>Rs.299</h2>
-                <button class="primary-button">Buy now</button>
+            <p class="item-name">Deep Like Ocean</p>
+            <p class="price">Rs.299</p>
+            <button class="primary-button">Buy now</button>
         </div>
         <div class="demo11">
             <img src="images/store/mouse_pad/mouse_pad_into_the_space.png" alt="Into the space mousepad" />
-            <h2>Into the space</h2>
-            <h2>Rs.299</h2>
+            <p class="item-name">Into the space</p>
+            <p class="price">Rs.299</p>
             <button class="primary-button">Buy now</button>
         </div>
         <div class="demo11">
             <img src="images/store/mouse_pad/mouse_pad_lotus.png" alt="The lotus" />
-            <h2>The Lotus</h2>
-            <h2>Rs.299</h2>
+            <p class="item-name">The Lotus</p>
+            <p class="price">Rs.299</p>
             <button class="primary-button">Buy now</button>
         </div>
     </div>

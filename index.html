@@ -10,12 +10,50 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="global.css" />
+
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
+    }
+
+    .social-icons {
+      display: flex;
+      align-items: center;
+    }
+
+    .social-icons a {
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      overflow: hidden;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .social-icons a img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .trailing_text {
+      font-size: 20px;
+      font-weight: 700;
+      color: #657ebf;
+      margin-right: 10px;
+    }
+
+    .icon-button {
+      margin-right: 10px;
+      border-radius: 10px;
+      padding: 5px;
+      cursor: pointer;
+    }
+
+    .icon-button:hover {
+      background-color: wheat;
     }
 
     .active-link {
@@ -262,7 +300,6 @@
       align-items: center;
       display: flex;
       margin-left: 100px;
-      width: 50%;
     }
 
     /* *********************************** */
@@ -388,6 +425,54 @@
     }
 
     /* *************************** */
+    .wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .column img {
+      width: 500px;
+    }
+
+    .primary-button {
+      border: 2px solid #fcb13d;
+      border-radius: 50px;
+      padding: 5px 10px;
+      background-color: #fcb13d;
+      cursor: pointer;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      outline: none;
+      min-width: 100px;
+    }
+
+    .primary-button:hover {
+      background-color: #f29203;
+    }
+
+    .headinge-text2 {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+
+    .headinge-text2 h1 {
+      font-size: 30px;
+      padding-left: 100px;
+      margin-right: 10px;
+      color: #636363;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+    }
+
+    .headinge-text2 img {
+      border: 2px solid #fcb13d;
+      border-radius: 50px;
+      padding: 5px 10px;
+      background-color: #fcb13d;
+      width: 20px;
+    }
   </style>
 </head>
 
@@ -453,7 +538,7 @@
     <nav>
       <ul>
         <li><a class="active-link">Home</a></li>
-        <li><a href="#">Portfolio</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
         <li><a href="aboutme.html">About</a></li>
         <li><a href="learn.html">Learn</a></li>
         <li><a href="comproj.html">Projects</a></li>
@@ -471,6 +556,22 @@
     <div id="left-side">
       <!-- Your image on the left side -->
       <img src="images/graphics/hero_banner.png" alt="hero banner" />
+
+    </div>
+    <div id="right-side">
+      <!-- Your text content on the right side -->
+      <h1 id="htag">
+        Unveling dreams<br />
+        in pixels:
+      </h1>
+      <h1>Vidhu's Wonderland</h1>
+      <p>Where imagination takes flight and illustration comes to life.</p>
+      <button class="primary-button">Get started</button>
+    </div>
+  </div>
+  <!-- 8************************ -->
+  <div class="wrapper">
+    <div class="column">
       <div id="flo">
         <div class="social-icons">
           <p class="trailing_text">Follow Me</p>
@@ -490,25 +591,23 @@
             </a>
           </div>
           <!-- <div class="icon-button">
-                <a href="https://x.com/vidhu_vjn" target="_blank">
-                    <img src="icon/x.svg" alt="x" />
-                </a>
-            </div> -->
+              <a href="https://x.com/vidhu_vjn" target="_blank">
+                  <img src="icon/x.svg" alt="x" />
+              </a>
+          </div> -->
         </div>
       </div>
     </div>
-    <div id="right-side">
-      <!-- Your text content on the right side -->
-      <h1 id="htag">
-        Unveling dreams<br />
-        in pixels:
-      </h1>
-      <h1>Vidhu's Wonderland</h1>
-      <p>Where imagination takes flight and illustration comes to life.</p>
+    <div class="column">
+      <img src="images/graphics/landing_page_pattern.svg" alt="pattern">
     </div>
   </div>
-  <!-- 8************************ -->
-
+  <!-----------------Test------------->
+  <a class="headinge-text2" href="portfolio.html">
+    <h1>Explore the works</h1>
+    <img src="images/graphics/arrow.svg" alt="Portfolio" />
+  </a>
+  </div>
   <section id="slider">
     <input type="radio" name="slider" id="s1" data-slide="1" checked>
     <input type="radio" name="slider" id="s2" data-slide="2">
